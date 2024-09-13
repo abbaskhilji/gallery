@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="image/3d-pear-tree-against-defocussed-grassy-landscape.jpg" alt="" id="FullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <h1>GALLERY</h1>
+    <div class="ImageGllery">
+        
+        <img src="image/3d-pear-tree-against-defocussed-grassy-landscape.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="image/colorful-flower-is-vase-with-yellow-center.jpg" alt="image not found" onclick="openFullImg(this.src)">
+        <img src="image/ground-red-outdoor-child-complex-colorful.jpg" alt="image not found" onclick="openFullImg(this.src)">
+        <img src="image/little-girl-with-red-dress-cosmetics.jpg" alt="image not found" onclick="openFullImg(this.src)">
+        <img src="image/young-couple-giving-high-five-while-playing-video-game-living-room.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="image/lone-tree.jpg" alt="image not foung" onclick="openFullImg(this.src)">
+        <img src="image/spacious-room-with-wooden-table.jpg" alt="" onclick="openFullImg(this.src)">
+        <img src="image/woman-choosing-dress-shop.jpg" alt="image not found" onclick="openFullImg(this.src)">
+        <img src="image/young-woman-with-kids-walking-autumn-park.jpg" alt="image not found" onclick="openFullImg(this.src)">
+    </div>
+    <script>
+        var fullImgBox =document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("FullImg");
+        function openFullImg(pic) {
+            fullImgBox.style.display = "flex"
+            fullImg.src = pic;
+
+            
+        }
+        function closeFullImg() {
+            fullImgBox.style.display = "none"
+            
+        }
+    </script>
+
+    
+</body>
+</html>
